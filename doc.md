@@ -22,9 +22,9 @@ ANSI escape codes start with the Escape character (represented by `\e` or the AS
 >
 > **Octal:** `\x1B` (This is the hexadecimal equivalent of the ASCII value 27)
 
-**Common Commands:**
+**Common Code Sequences:**
 
-Here are a few common commands we can use:
+Here are a few we can use:
 
 - **Text Styling:**
     - `\e[0m` - Reset all text styles (default)
@@ -52,20 +52,16 @@ Here are a few common commands we can use:
 
 **Example:**
 
+
 ```
-\e[31mThis text is red\e[0m
+echo -e "\x1b[32mRam Ram Ji\x1b[0m"
 ```
+
 or
-```
-\033[31mThis text is red\033[0m
-```
-
-This will print "This text is red" in red on our terminal, then reset the color to the default.
-
 
 ```
-echo -e "\e[32mHello, world!\e[0m"
+echo -e "\033[32mRam Ram Ji\033[0m"
 ```
 
-we should see "Hello, world!" printed in green!
+We should see "Ram Ram Ji" printed in green!
 
