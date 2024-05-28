@@ -30,7 +30,7 @@ Here are a few common commands we can use:
     - `\e[0m` - Reset all text styles (default)
     - `\e[1m` - Bold
     - `\e[4m` - Underline
-    - `\e[7m` - Reverse video (swap foreground and background colors)
+    - `\e[7m` - swap foreground and background colors
 
 - **Text Color:**
     - `\e[30m` - Black
@@ -55,17 +55,13 @@ Here are a few common commands we can use:
 ```
 \e[31mThis text is red\e[0m
 ```
+or
+```
+\033[31mThis text is red\033[0m
+```
 
 This will print "This text is red" in red on our terminal, then reset the color to the default.
 
-**Important Considerations:**
-
-- **Not Universally Supported:**  ANSI escape codes work on most modern terminals, but they might not be supported on very old or specific terminal applications.
-- **Security:** Be cautious when using ANSI escape codes from untrusted sources, as they could potentially be used for malicious purposes.
-
-**Let's Practice!**
-
-Want to try an experiment? Open our terminal and type the following command:
 
 ```
 echo -e "\e[32mHello, world!\e[0m"
@@ -73,4 +69,3 @@ echo -e "\e[32mHello, world!\e[0m"
 
 we should see "Hello, world!" printed in green!
 
-Feel free to ask if we have any more questions or want to explore specific commands.

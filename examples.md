@@ -1,4 +1,6 @@
-Here are the 20 examples:
+Here are some more examples:
+
+> Note: The `-e` flag in the `echo` command is used to enable interpretation of backslash escapes. This means that special characters and sequences prefixed by a backslash (such as `\n` for a newline, `\t` for a tab, etc.) will be interpreted and processed by `echo`, rather than being output as literal text.
 
 **Text Styling:**
 
@@ -113,9 +115,7 @@ Here are the 20 examples:
     echo -e "\033[1;4;34;43mThis text is bold, underlined, and blue on yellow\033[0m"
     ```
 
-**Key Improvements:**
-
-- **Portability:** Using `\033` instead of `\e` ensures wider compatibility across different systems and terminals.
-
-> Note: The `\x1B` (hexadecimal) representation is also valid and can be used interchangeably with `\033` (octal).
+> Note: Using `\033` instead of `\e` ensures wider compatibility across different systems and terminals.
+>
+> The `\x1B` (hexadecimal) representation is also valid and can be used interchangeably with `\033` (octal).
 
